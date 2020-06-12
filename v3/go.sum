@@ -1,5 +1,2 @@
-module github.com/go-ldap/ldap/v3
-
-go 1.13
-
-require github.com/go-asn1-ber/asn1-ber v1.5.0
+github.com/go-asn1-ber/asn1-ber v1.3.1 h1:gvPdv/Hr++TRFCl0UbPFHC54P9N9jgsRPnmnr419Uck=
+github.com/go-asn1-ber/asn1-ber v1.3.1/go.mod h1:hEBeB/ic+5LoWskz+yKT7vGhhPYkProFKoKdwZRWMe0=
