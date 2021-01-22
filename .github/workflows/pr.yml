@@ -11,6 +11,7 @@ jobs:
     strategy:
       matrix:
         go: [
+          '1.15',
           '1.14',
           '1.13',
         ]
@@ -42,8 +43,6 @@ jobs:
           '1.9',
           '1.8',
           '1.7',
-          '1.6',
-          '1.5',
         ]
     name: Go ${{ matrix.go }}.x PR Validate (Legacy)
     env:
@@ -75,8 +74,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v1
+        uses: golangci/golangci-lint-action@v2
         with:
-          version: v1.26
+          version: v1.33
           only-new-issues: true
 
